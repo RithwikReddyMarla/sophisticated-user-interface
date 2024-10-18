@@ -1,0 +1,266 @@
+body{
+  position: fixed;
+  margin: 0;
+  padding: 0;
+}
+.homepage{
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  width: 100vw;
+  color: black;
+}
+.homeimg {
+  filter: brightness(0) invert(1);
+}
+.header {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center; 
+  padding: 10px; 
+  border: #333; 
+  font-size: 25px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+  
+}
+.help{
+  margin-right: 90px;
+  text-align: center;
+}
+.rightsection{
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
+  align-items: center;
+  color: #333;
+}
+.leftsection{
+  display: flex;
+  align-items: center;
+}
+.home,.about{
+  margin-right: 80px;
+}
+.wel {
+  margin-top: 20px;
+}
+
+.welcometitle{
+  font-family: 'Playfair Display';
+  font-size: 60px;
+  font-weight: 400;
+  margin: auto;
+  margin-top:9%;
+  margin-left: 15%;
+}
+.get-started-btn {
+  width: 150px; /* Increase width */
+  height: 50px; /* Increase height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  text-align: center;
+  background-color: #333; /* Button background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.get-started-btn:hover {
+  background-color: #333; /* Darker color on hover */
+}
+
+.content{
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-size: 20px;
+  font-weight: 200;
+  margin-left: 15%;
+  margin-top: 30px;
+}
+/* Overall container style */
+.container {
+  display: flex;
+  height: 100vh; /* Full viewport height */
+}
+
+/* Style for the left pane */
+.left-pane {
+  width: 200px;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the pane */
+  border-right: 2px solid #e0e0e0; /* Light gray border on the right */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Slight shadow for better separation */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+/* Style for the question box container */
+.question-container {
+  width: 900px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Light gray background for the right side */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+/* Styling for the form elements */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for dropdown elements */
+select {
+  margin-top: 10px;
+  padding: 8px;
+  width: 100%;
+  font-size: 1em;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+  color: #333; /* Default text color for dropdowns */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+select#table {
+  color: #333; /* Font color for Select Table dropdown */
+}
+
+select#columns {
+  color:#333; /* Font color for Select Columns dropdown */
+}
+
+/* Style for textarea and button */
+textarea, button {
+  margin-top: 10px;
+  padding: 8px;
+  width: 100%;
+  font-size: 1em;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+/* Button styling */
+button {
+  background-color:#333;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #333; /* Darker blue on hover */
+}
+.generate-btn:active{
+  background-color: #220303;
+
+}
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd; /* Light gray border */
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color:#333; /* Blue background for header */
+  color: white; /* White text color */
+}
+
+td {
+  background-color: #f9f9f9; /* Light background for rows */
+  color: #333; /* Darker text color for readability */
+}
+
+/* Container for the graphs */
+.graph-container {
+  margin-top: 20px;
+}
+
+/* Styling for the question box */
+.question-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+/* List of columns */
+#columns-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#columns-list li {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 4px;
+  color: #333; /* Dark text color */
+}
+
+#columns-list li:hover {
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+}
+
+/* Style for labels */
+label {
+  font-size: 1.1em; /* Slightly larger font size for labels */
+  margin-top: 10px;
+}
+
+/* Specific colors for different labels */
+label[for="table"] {
+  color: #333; /* Blue color for Select Table label */
+}
+
+label[for="columns"] {
+  color: #333 /* Green color for Select Columns label */
+}
+
+label[for="question"] {
+  color:#333/* Orange color for Enter your question label */
+}
+
+/* Style for the question and button container */
+.question-container {
+  max-width: 1050px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px; /* Space between left pane and question container */
+  padding: 20px;
+}
+
+/* Adjust question box position */
+.question-box {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Style for the answers section */
+.right-pane {
+  padding: 20px;
+  background-color: #f9f9f9; /* Light gray background */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+/* Styling for query result and graph container */
+.query-result-container {
+  max-height: 80vh; /* Limit height for scrolling */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+.graph-type-label{
+  color: #000;
+}
