@@ -21,13 +21,12 @@ csv_files = []
 # Function to load Google Gemini Model and provide queries as response
 def get_gemini_response(question, prompt):
     try:
-        model = GenerativeModel('gemini-pro')
+        model = GenerativeModel('gemini-1.5-flash')  # Updated model here
         response = model.generate_content([prompt, question])
         return response.text
     except Exception as e:
         print(f"Error generating response: {e}")
         return None
-
 # Function to retrieve and execute query from the database
 def execute_sql_query(sql_query, db_name):
     try:
